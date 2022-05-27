@@ -1,11 +1,11 @@
 variable "public_key_path" {
   description = "Path to the public SSH key you want to bake into the instance."
-  default     = "~/.ssh/CQus-east-1.pub"
+  default     = "~/.ssh/<public key file>.pub"
 }
 
 variable "private_key_path" {
   description = "Path to the private SSH key, used to access the instance."
-  default     = "~/.ssh/CQus-east-1.pem"
+  default     = "~/.ssh/<private key file>.pem"
 }
 
 variable "project_name" {
@@ -20,12 +20,12 @@ variable "ssh_user" {
 
 variable "access_key" {
   description = "Access Key to AWS account"
-  default     = "AKIAUSZNLTRR2X2PCRV3"
+  default     = "xxxxx"
 }
 
 variable "secret_key" {
   description = "Secret Key to AWS account"
-  default     = "AOSJAgcZ6s4xwtPDdvdvciIaeDZeeDXPnNp+gr2y"
+  default     = "xxxxx"
 }
 
 variable "myname" {
