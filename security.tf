@@ -182,7 +182,7 @@ resource "aws_security_group" "allowall" {
 
 resource "aws_key_pair" "terraform_pub_key" {
   key_name   = "craigums-${random_id.server.hex}"
-  public_key = file("~/.ssh/CQus-east-1.pub")
+  public_key = file("~/.ssh/<public key file>.pub")
   tags = merge(
         local.common_tags,
 
